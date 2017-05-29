@@ -1,0 +1,94 @@
+.tab-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 64px;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+	background-image: linear-gradient(-1deg, rgba(23,21,27,0.00) 0%, rgba(23,21,27,0.48) 15%, #15141A 64%);
+  overflow: hidden;
+}
+
+.tab-item {
+  flex-grow: 1;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 16px auto;
+  transition: all .5s;
+}
+
+.button {
+  width: 48px;
+  height: 48px;
+  background-color: black;
+  margin: 4px auto;
+  transition: all .5s;
+  border-radius: 50%;
+  display: flex;
+}
+
+.icon-button {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+
+.baseline {
+  width: 0px;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  transition: all .5s;
+}
+
+.tab-item:hover .icon {
+  transform: translateY(-8px);
+  position: relative;
+
+}
+
+.tab-item:hover .baseline {
+  width: 24px;
+}
+
+.tab-item:hover #lupa {
+  fill: #17151B;
+}
+
+.tab-item:hover #mas {
+  fill: #17151B;
+}
+
+.tab-item:hover .button {
+  transform: translateY(-16px);
+  box-shadow: 0px 8px 24px #000;
+}
+
+/* Ejemplo para meter el color en los diferentes baselines usando nesthed child */
+.tab-item:nth-child(1):hover .baseline {
+  background-color: #0086FF;
+}
+
+.tab-item:nth-child(2):hover .baseline {
+  background-color: #FFB601;
+}
+
+.tab-item:nth-child(2):hover .button {
+  background-color: #FFB601;
+}
+
+.tab-item:nth-child(3):hover .baseline {
+  background-color: #00FFCB;
+}
+
+.tab-item:nth-child(3):hover .button {
+  background-color: #00FFCB;
+}
+
+.tab-item:nth-child(4):hover .baseline {
+  background-color: #01CBF5;
+}

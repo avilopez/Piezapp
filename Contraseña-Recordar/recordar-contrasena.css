@@ -1,0 +1,121 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #0D0B11;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Contenido - Caja Principal */
+.main-container {
+  height: 100vh;
+  margin: 0px 32px;
+}
+
+/* Especificaciones de inputs */
+input {
+  display: block;
+  border: none;
+  padding: 12px 0px;
+  background: none;
+  width: 90%;
+  margin: 24px auto;
+  font-size: 16px;
+	font-family: 'Varela Round', sans-serif;
+	letter-spacing: 1px;
+  border-bottom: 2px solid #222027;
+	text-align: center;
+	color: white;
+  transform-origin: 50% 50% 0;
+  outline: none;
+  transition: width .5s ease-out 0.1s;
+}
+
+input::placeholder {
+	color: #868588;
+	letter-spacing: 2px;
+}
+
+label {
+  font-size: 12px;
+}
+
+input:focus {
+  width: 99%;
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+.title {
+	font-size: 12px;
+	font-family: 'Varela Round', sans-serif;
+	letter-spacing: 2px;
+  color: #FFB601;
+	text-transform: uppercase;
+	margin: 24px 0px;
+	text-align: center;
+}
+
+.explanation {
+	font-size: 16px;
+	font-family: 'Varela Round', sans-serif;
+	letter-spacing: 2px;
+	line-height: 20px;
+	color: #868588;
+	margin: 24px 0px;
+}
+
+/* Botón Registro */
+.button {
+	display: block;
+	margin: auto;
+  width: 100%;
+	height: 48px;
+	background: #0D0B11;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50), 4px 4px 8px 0 rgba(0,0,0,0.72);
+	border: 2px solid #01CBF5;
+	border-radius: 24px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #01CBF5;
+}
